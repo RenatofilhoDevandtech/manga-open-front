@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import 'normalize.css';
+@import "tailwindcss";
+:root {
+  --primary-color: #4F8A8B;
+  --secondary-color: #FBD46D;
+  --accent-color: #F76B8A;
+  --background-color: #F9F9F9;
+  --surface-color: #FFFFFF;
+  --text-color: #222831;
+  --muted-text-color: #6D6D6D;
+  --border-color: #E0E0E0;
+  --success-color: #43AA8B;
+  --warning-color: #FFB627;
+  --error-color: #E84545;
+
+  --font-family: 'Savate', sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --line-height-base: 1.5;
+  --border-radius: 8px;
+  --transition-duration: 0.3s;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-sm: 0 1px 2px var(--shadow-color);
+  --shadow-md: 0 4px 6px var(--shadow-color);
+}
