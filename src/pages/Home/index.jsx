@@ -1,6 +1,7 @@
-// arquivo: src/pages/Home.jsx
 
 import { FaArrowRight } from "react-icons/fa";
+// PASSO 1: Importe a imagem como um módulo
+import bannerBackground from "../../assets/Banner3.svg"; // <-- Verifique se este caminho está correto
 
 const Home = () => {
   // Mock data para a seção de destaques visuais
@@ -29,7 +30,13 @@ const Home = () => {
     <main className="bg-(--background-color) text-(--text-color) min-h-screen flex flex-col items-center font-(--font-family)">
       {/* Banner de boas-vindas */}
       <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('src/assets/Banner3.svg')] bg-cover bg-center transform scale-110"></div>
+        
+        {/* PASSO 2: Use o style inline com a imagem importada */}
+        <div 
+            className="absolute inset-0 bg-cover bg-center transform scale-110"
+            style={{ backgroundImage: `url(${bannerBackground})` }}
+        ></div>
+
         <div className="absolute inset-0 bg-gradient-to-t from-(--background-color) via-transparent to-transparent"></div>{" "}
         {/* Efeito de fade com o fundo */}
         <div className="relative z-10 text-center p-8 bg-[rgba(0,0,0,0.6)] rounded-(--border-radius) shadow-(--shadow-md) backdrop-blur-sm">
